@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This project is an example of how computer components have hardware identifiers that can be used by developers to lock applications to specific computers. This code is a part of a [video](https://www.youtube.com/watch?v=78JToBCejdU) where I explain how to control distribution of applications and prevent piracy,
+This project is an example of how computer components have hardware identifiers that can be used by developers to lock applications to specific computers. <br />
+This code is from a [video](https://www.youtube.com/watch?v=78JToBCejdU) where I explain how to control distribution of applications and prevent piracy.
 
 ## Code Samples
 
@@ -31,7 +32,7 @@ Retrieving HDD information, the HDD serial is most commonly used for locking app
 ```
 Retrieving the computer name, this is easily changeable by the user.
 ```cpp
-    TCHAR computerName[MAX_COMPUTERNAME_LENGTH + 1];
+    	TCHAR computerName[MAX_COMPUTERNAME_LENGTH + 1];
 	DWORD size = sizeof(computerName) / sizeof(computerName[0]);
 	if (GetComputerName(
 		computerName,
